@@ -30,16 +30,19 @@ class QueueWithCircularArray:
         return self.rear == self.front
 
 
-queueInstance = QueueWithCircularArray()
+queueInstance = QueueWithCircularArray(5)
 
 queueInstance.delete()
 queueInstance.add(1)
 queueInstance.add(2)
 queueInstance.add(3)
-queueInstance.delete()
-queueInstance.delete()
 queueInstance.add(4)
-queueInstance.delete()
-queueInstance.delete()
-queueInstance.delete()
 queueInstance.add(5)
+queueInstance.delete()
+queueInstance.add(7)
+queueInstance.delete()
+queueInstance.delete()
+queueInstance.delete()
+queueInstance.delete()
+queueInstance.delete()
+
